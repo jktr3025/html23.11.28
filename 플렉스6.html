@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            width: 1000px;
+            margin: 20px auto;
+            font-size: 25px;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: wrap;
+                    }
+                    .header{
+                        width: 100%;
+                        background: rgb(170, 223, 244);
+                        height: 80px;
+                    }
+                    .left{
+                        width: 30%;
+                        height: 400px;
+                        background: rgb(159, 121, 197);
+                    }
+                    .right{
+                        width: 70%;
+            background: rgb(228, 178, 195);
+                    }
+                    .footer{
+                        width: 100%;
+                        height: 80px;
+                        background: rgb(155, 223, 250);
+                    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <header class="header">사이트 제목</header>
+            <div class="left">사이드바</div>
+            <div class="right">본문</div>
+        <footer class="footer">하단</footer>
+    </div>
+</body>
+</html>

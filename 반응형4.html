@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            background: yellowgreen;
+        }
+
+        h1 {
+            color: deeppink;
+        }
+
+        @media screen and (max-width:1000px) and (min-width:500px) {
+            body {
+                background: olivedrab;
+            }
+
+            h1 {
+                color: tan;
+            }
+        }
+
+        /* 
+            미디어 스크린에서 스크린에서 생략가능
+            여러 조건쓸 때 and 적어주기
+            and 연산자 앞뒤로 스페이스 필수
+             */
+
+        @media screen and (max-width:499px) {
+            body {
+                background: darkkhaki;}
+        }
+
+        /* 
+        1번 조건에 안 맞으면 
+        2번 조건에 맞는지 보고 
+        명령어가 들어가는 형식 */
+    </style>
+</head>
+
+<body>
+    <h1>media Query test</h1>
+</body>
+
+</html>

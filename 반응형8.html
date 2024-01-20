@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        .wrap{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .side{
+            width: 30%;
+            height: 300px;
+            float: left;
+            background: pink;
+        }
+        .contents{
+            width: 70%;
+            height: 300px;
+            float: left;
+        }
+        .contents .cont_up{
+            height: 150px;
+            background: darkseagreen;
+        }
+        .contents .cont_down{
+            height: 150px;
+            background: slategray;
+        }
+        @media screen and (max-width:1024px) {
+            .wrap{width: 90%;}
+        }
+        @media screen and (max-width:800px) {
+            .wrap{width: 100%;}
+            .side{float: none;
+            width: auto;}
+            .contents{
+                float: none;
+            width: auto;
+            height: auto;
+            }
+            .contents .cont_up{height: 300px;}
+            .contents .cont_down{height: 300px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <aside class="side">side</aside>
+        <section class="contents">
+        <div class="cont_up">up</div>
+        <div class="cont_down">down</div>
+    </section>
+    </div>
+</body>
+</html>

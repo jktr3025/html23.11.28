@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        @font-face {
+            font-family: "SKYBORI";
+            src: url("font/SKYBORI\ \(1\).ttf");
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: "SKYBORI";
+        }
+
+        .wrap {
+            width: 800px;
+            margin: 100px auto;
+        }
+
+        .square {
+            background: hsl(0, 0%, 20%);
+            padding: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 
+            "crepe crepe cookie choco"
+            "crepe crepe cream cake"
+            "candy coke cheeze cake"
+            "cinamon cinamon chili cake";
+            grid-template-rows: repeat(4, 130px);
+        }
+
+        .square li {
+            background-repeat: no-repeat;
+            background-position: center center;
+            padding: 10px;
+            border-radius: 15px;
+            transition: all 0.3s;
+            filter: brightness(0.5);
+            }
+            .square li:hover{
+                transform: scale(1.2);
+                border: 7px solid tan;
+                filter: brightness(1);
+                z-index: 100;
+            }
+            .square li span{
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        .crepe {
+            background-image: url("img/crepe.png");
+            grid-area: crepe;
+        }
+
+        .cookie {
+            background-image: url("img/cookie.png");
+            grid-area: cookie;
+        }
+
+        .choco {
+            background-image: url("img/choco.png");
+            grid-area: choco;
+        }
+
+        .cream {
+            background-image: url("img/cream.png");
+            grid-area: cream;
+        }
+
+        .cake {
+            background-image: url("img/cake.png");
+            grid-area: cake;
+        }
+
+        .candy {
+            background-image: url("img/candy.png");
+            grid-area: candy;
+        }
+
+        .coke {
+            background-image: url("img/coke.png");
+            grid-area: coke;
+        }
+
+        .cheeze {
+            background-image: url("img/cheeze.png");
+            grid-area: cheeze;
+        }
+
+        .cinamon {
+            background-image: url("img/cinnamon.png");
+            grid-area: cinamon;
+        }
+
+        .chili {
+            background-image: url("img/chili.png");
+            grid-area: chili;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <ul class="square">
+            <li class="crepe"><span>crepe</span></li>
+            <li class="cookie"><span>cookie</span></li>
+            <li class="choco"><span>choco</span></li>
+            <li class="cream"><span>cream</span></li>
+            <li class="cake"><span>cake</span></li>
+            <li class="candy"><span>candy</span></li>
+            <li class="coke"><span>coke</span></li>
+            <li class="cheeze"><span>cheeze</span></li>
+            <li class="cinamon"><span>cinamon</span></li>
+            <li class="chili"><span>chili</span></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

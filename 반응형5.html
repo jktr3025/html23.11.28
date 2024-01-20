@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+.wrap{
+    height: 400px;
+    border: 5px double olive;
+    padding: 30px;
+}
+.box{
+    font-size: 100px;
+}
+@media screen and (orientation:landscape) { 
+    body{    background: darkkhaki;}    
+    .box{font-size: 200px;}
+}
+@media screen and (orientation:portrait) {
+    body{background: darkolivegreen;
+    color: antiquewhite;
+font-weight: bold;}
+.box{font-size: 20px;}
+}
+@media screen and (max-width:400px) {
+    .wrap{
+        background: green;
+        border: none;
+        color: white;
+    }
+    }
+    /* 기본에 부모-자식 관계로 써줬으면 
+    반응형에 부모-자식 관계 그대로 써줘야지 명령어가 제대로 들어감   */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        wrapper
+        <div class="box">box</div> 
+    </div>
+</body>
+</html>

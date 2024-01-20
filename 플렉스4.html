@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        .wrap1 {
+            margin: 20px auto;
+            width: 1000px;
+            height: 400px;
+            border: 1px solid darkblue;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .wrap1 li {
+            width: 200px;
+            height: 200px;
+            border: 1px solid darkcyan;
+        }
+
+        .wrap2 {
+            width: 100%;
+            margin: 10 auto;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .wrap2 li {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            background: skyblue;
+        }
+
+        .wrap3 {
+            background: orange;
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .wrap3 .box {
+            width: 100px;
+            height: 100px;
+            background: darkmagenta;
+            color: tan;
+            font-size: 30px;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .wrap4 {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            border: 1px solid seagreen;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .con {
+            width: 50px;
+            height: 50px;
+            border: 1px solid sienna;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="wrap1">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <ul class="wrap2">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+    </ul>
+
+    <div class="wrap3">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+    </div>
+    <div class="wrap4">
+        <div class="con">1</div>
+    </div>
+
+
+</body>
+
+</html>

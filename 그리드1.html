@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .grid_container{
+            background: pink;
+            padding: 20px;
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px ; */
+            /* grid-template-columns:repeat(3, 200px) ; */
+            /* grid-template-columns: 200px 200px auto ; */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: 1fr 2fr 3fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            /* column-gap: 20px; */
+            /* row-gap: 30px; */
+            gap: 20px 30px;
+        }
+        .grid_item{
+            background: paleturquoise;
+            padding: 20px;
+            border-radius: 20px;
+            /* width: 300px; */
+        }
+        .grid_span{
+            width: 800px;
+            margin: 10px auto;
+            border: 3px dashed orangered;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+        .grid_span_item{
+            background: greenyellow;
+            padding: 30px;
+            border-radius: 10px;
+            color: tan;
+            font-size: 30px;
+        }
+        .item1{
+            /* grid-column: 1 / 4; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / 2;
+        }
+        .item6{
+            grid-column: 2 / span 2 ;
+            grid-row: 3 /4 ;
+        }
+        .item7{
+            grid-column: 3 / 4;
+            grid-row: 4 / 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="grid_item">1</div>
+        <div class="grid_item">2</div>
+        <div class="grid_item">3</div>
+        <div class="grid_item">4</div>
+        <div class="grid_item">5</div>
+        <div class="grid_item">6</div>
+        <div class="grid_item">7</div>
+        <div class="grid_item">8</div>
+        <div class="grid_item">9</div>
+    </div><!-- grid_container -->
+
+    <div class="grid_span">
+        <div class="grid_span_item item1">1</div>
+        <div class="grid_span_item item2">2</div>
+        <div class="grid_span_item item3">3</div>
+        <div class="grid_span_item item4">4</div>
+        <div class="grid_span_item item5">5</div>
+        <div class="grid_span_item item6">6</div>
+        <div class="grid_span_item item7">7</div>
+        <div class="grid_span_item item8">8</div>
+        <div class="grid_span_item item9">9</div>
+    </div><!-- grid_span -->
+</body>
+</html>

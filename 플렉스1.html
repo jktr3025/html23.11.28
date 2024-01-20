@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .wrap{
+            border: 1px solid slateblue;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            display: flex;
+            /* flex-direction: 명령없으면 기본값은 row ;  로우가 가로 방향, 칼럼이 세로방향    */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: nowrap; 넘쳐도 다음 내용이 보이도록 함(기본값) */
+            /* flex-wrap: wrap; 넘치면 줄바꿈 */
+            /* flex-wrap: wrap-reverse; */
+            flex-wrap: wrap;
+            /* 꽂은 방향에 따른 남은 간격을 분할하는 법 */
+            /* justify-content: flex-start ; 기본값으로 시작하는쪽으로부터 붙음 */
+            /* justify-content: flex-end; 끝쪽으로부터 붙음 */
+            /* justify-content: space-around; 양쪽 벽을 포함하여 남은 공간 값을 균등분할
+            좌우 공간이 겹치면 중복이 아닌 2배의 값만큼 떨어짐 */
+            /* justify-content: space-between; 양쪽은 벽에 붙고 나머지 공간을 균등분학 */
+            /* 꽃이 방향의 반대 방향에 대한 간격 분할 */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: stretch; 높이 지정을 안했을 때 길이를 늘려 남은 공간없이사용 */
+
+        }
+        .item{
+            border: 1px solid seagreen;
+            padding: 0 30px;
+            line-height: 30px;
+            text-align: center;
+            /* height: 150px; */
+        }
+        .box{height: 300px;
+        margin: 100px auto;
+    border: 1px solid darkmagenta;
+display: flex;
+justify-content: space-around;
+/* 꽂이 반대방향이 1줄일 때의 균등분할 방법 */
+align-items: center  ;
+}
+    .box_inner{
+        width: 200px;
+        height: 200px;
+        border: solid 1px skyblue;
+    }
+    .menu{
+        width: 50%;
+        border: 1px saddlebrown solid;
+        margin: 100px auto;
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu li{
+        background: darkgrey;
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    .logo{
+        width: 200px;
+        height: 100px;
+        border: 1px solid darkorchid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo a{
+        display: block;
+        background: pink;
+        width: 80%;
+        height: 80px;
+    }
+    .head{
+        border: 1px solid seagreen;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+    .head a{
+        display: block;
+        width: 100px;
+        height: 50px;
+        background: khaki;
+        line-height: 50px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">1 <br> 111 <br> 1111111111</div>
+        <div class="item">2 <br> 222222222 </div>
+        <div class="item">3 <br> 33333 <br> 333333 </div>
+        <div class="item">4 <br> 4444 <br> 444 </div>
+        <div class="item">5 <br> 555555 </div>
+        <div class="item">6 <br> 6666666 </div>
+        <div class="item">7 <br> 77777 </div>
+        <div class="item">8 <br> 88 <br> 88 <br> 88</div>
+    </div>
+    <div class="box">
+        <div class="box_inner">box1</div>
+        <div class="box_inner">box2</div>
+        <div class="box_inner">box3</div>
+    </div>
+    <ul class="menu">
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+    </ul>
+
+    <h1 class="logo">
+        <a href="#">로고</a>
+    </h1>
+
+    <div class="head">
+        <a href="#">logo</a>
+        <a href="#">menu</a>
+    </div>
+</body>
+</html>

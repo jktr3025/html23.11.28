@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        h1{
+            font-size: 30px;
+        color: brown;
+    display: none;}
+@media (orientation : landscape) {
+    body{background: steelblue;}
+    .landscape{display: block;}
+}
+@media (orientation :portrait) {
+    body{background: orange;}
+    .portrait{color: black;
+    display: block;}
+}
+    </style>
+</head>
+<body>
+    <h1 class="landscape">가로레이아웃</h1>
+    <h1 class="portrait">세로레이아웃</h1>
+</body>
+</html>

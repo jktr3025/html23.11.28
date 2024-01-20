@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            /* grid-template-areas: 
+            "header header header header header"
+            "side1 center center center side2"
+            "footer footer footer footer footer"
+            ; */
+            grid-template-areas: 
+            "header header header header"
+            "side1 center center center"
+            "side2 center center center"
+            "footer footer footer footer"
+            ;
+            gap: 20px;
+            text-align: center;
+        }
+        .header{
+            background: black;
+            color: white;
+            grid-area: header;
+        }
+        .left{
+            background: #333;
+            grid-area: side1;
+            color: white;
+        }
+        .center{
+            background: darkgray;
+            grid-area: center;
+            color: white;
+        }
+        .right{
+            background: #333;
+            grid-area: side2;
+            color: white;
+        }
+        .footer{
+            background: #222;
+            grid-area: footer;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <header class="header">header</header>
+
+    <aside class="left">aside</aside>
+    <section class="center">section <br> section <br> section <br> section <br> </section>
+    <aside class="right">aside</aside>
+
+    <footer class="footer">footer</footer>
+</div><!-- wrap -->
+</body>
+</html>
